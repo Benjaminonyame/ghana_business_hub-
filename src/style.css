@@ -1,0 +1,173 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f8f7;
+  color: #202b29;
+}
+
+.header {
+  background: #075e54;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.nav {
+  background: #06483f;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(135deg, #d8f0e9, #eff8f4);
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.tagline {
+  color: #b17a0c;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  color: #075e54;
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  line-height: 1.7;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px auto 0;
+  max-width: 600px;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background: #e5a51b;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.categories {
+  padding: 65px 20px;
+  text-align: center;
+}
+
+.categories > h2,
+.about h2 {
+  color: #075e54;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 35px auto 0;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #0000000c;
+}
+
+.card span {
+  font-size: 42px;
+}
+
+.card h3 {
+  color: #075e54;
+  margin: 15px 0;
+}
+
+.card p {
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.card a {
+  color: #075e54;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about {
+  background: #e4f0eb;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about p {
+  max-width: 650px;
+  margin: 15px auto 0;
+  line-height: 1.8;
+}
+
+footer {
+  background: #06483f;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .search {
+    flex-direction: column;
+  }
+
+  .search button {
+    width: 100%;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+}
